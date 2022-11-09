@@ -40,7 +40,7 @@ jobs:
     - name: Docker Hub Description
       uses: peter-evans/dockerhub-description@v3
       with:
-        username: ${{ secrets.DOCKER_HUB_USER }}
-        password: ${{ secrets.DOCKER_HUB_PASS }}
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
         repository: wernercd/terraria
         short-description: "Docker images to run a Terraria Server. Images with TShock Server are available."
