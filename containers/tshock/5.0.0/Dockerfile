@@ -23,10 +23,10 @@ RUN cd /tmp && \
     curl -sL https://github.com/Pryaxis/TShock/releases/download/v5.0.0/TShock-5.0.0-for-Terraria-1.4.4.7-linux-arm-Release.zip --output tshock_release.zip && \
     unzip tshock_release.zip -d /tmp/tshock && \
     cd /tmp/tshock && \
-    cd $(find . -name TerrariaServer.exe -printf '%h\n') && \
+    cd $(find . -name TShock.Server -printf '%h\n') && \
     mv ./* /tshock/ && \
     rm -R /tmp/* && \
-    chmod +x /tshock/TerrariaServer.exe
+    chmod +x /tshock/TShock.Server
 
 COPY run-tshock.sh /tshock/run.sh
 

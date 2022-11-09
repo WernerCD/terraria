@@ -10,7 +10,7 @@ import os, sys, urllib.request, json, glob, shutil, datetime
 #####
 # Configuration
 #####
-limit = 5
+limit = 1
 
 
 
