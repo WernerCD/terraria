@@ -74,5 +74,5 @@ jobs:
       with:
         username: ${{ secrets.DOCKER_HUB_USER }}
         password: ${{ secrets.DOCKER_HUB_PASS }}
-        repository: beardedio/terraria
+        repository: wernercd/terraria
         short-description: "Docker images to run a Terraria Server. Images with TShock Server or Vanilla Server are available."
