@@ -24,6 +24,8 @@ RUN curl -sL https://github.com/Pryaxis/TShock/releases/download/v5.0.0/TShock-5
 RUN unzip tshock_release.zip -d /tmp/tshock 
 RUN cd /tmp/tshock 
 RUN tar -xvf TShock-Beta-linux-arm-Release.tar 
+RUN cd /tmp/tshock 
+RUN ls -lA
 RUN cd $(find . -name TShock.Server -printf '%h\n') 
 RUN mv ./* /tshock/ 
 RUN rm -R /tmp/* 
